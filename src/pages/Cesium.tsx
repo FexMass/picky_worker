@@ -14,8 +14,8 @@ const Cesium: React.FunctionComponent = () => {
 
   return (
     <Grid container justifyContent="center" sx={{ mt: 5 }}>
+      <Typography variant="h4">Interactive map using Resium and Cesium.js</Typography>
       <Grid item xs={10}>
-        <Typography variant="h4">Interactive map using Resium and Cesium.js</Typography>
         <CesiumWidget full={false} useBrowserRecommendedResolution sceneMode={SceneMode.SCENE2D} />
       </Grid>
     </Grid>

@@ -9,7 +9,7 @@ const Home: React.FunctionComponent = () => {
         overflow: 'hidden', width: '100vw', height: '100vh', px: '20%', py: '20%', backgroundColor: '#053D4D',
       }}
     >
-      <Typography variant="h1" color="white">React Typescript Project Template</Typography>
+      <Typography variant="h1" color="white">Picky Worker</Typography>
       <Button
         variant="contained"
         color="secondary"

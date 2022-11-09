@@ -4,7 +4,9 @@ import { ThemeProvider } from '@mui/material/styles';
 import { CssBaseline } from '@mui/material';
 import { theme } from './styles';
 
-import { Home, Theme } from './pages';
+import {
+  Home, Theme, Cesium, MapBox, Leaflet
+} from './pages';
 
 const App: React.FC = () => {
   return (
@@ -14,6 +16,9 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/theme" element={<Theme />} />
+          <Route path="/cesium" element={<Cesium />} />
+          <Route path="/mapbox" element={<MapBox />} />
+          <Route path="/leaflet" element={<Leaflet />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

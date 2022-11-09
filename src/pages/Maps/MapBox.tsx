@@ -70,9 +70,12 @@ const MapBox: React.FunctionComponent = () => {
   }, []);
 
   return (
-    <Grid container justifyContent="center" sx={{ mt: 5 }}>
-      <Typography variant="h4">Interactive map using Mapbox</Typography>
-      <Grid item xs={10} height="80vh" className="map-container" ref={mapContainerRef} />
+    // eslint-disable-next-line max-len
+    <Grid container alignItems="center" flexDirection="column" sx={{ height: '100vh', pt: 3, backgroundColor: '#053D4D' }}>
+      <Typography variant="body1" paragraph color="white">
+        Dependencies: resium cesium
+      </Typography>
+      <Grid item width="90vw" height="80vh" className="map-container" ref={mapContainerRef} />
     </Grid>
   );
 };

@@ -13,9 +13,12 @@ const Cesium: React.FunctionComponent = () => {
   Camera.DEFAULT_VIEW_FACTOR = 0.01;
 
   return (
-    <Grid container justifyContent="center" sx={{ mt: 5 }}>
-      <Typography variant="h4">Interactive map using Resium and Cesium.js</Typography>
-      <Grid item xs={10}>
+    // eslint-disable-next-line max-len
+    <Grid container alignItems="center" flexDirection="column" sx={{ height: '100vh', pt: 3, backgroundColor: '#053D4D' }}>
+      <Typography variant="body1" paragraph color="white">
+        Dependencies: resium cesium
+      </Typography>
+      <Grid item width="90vw" height="80vh">
         <CesiumWidget full={false} useBrowserRecommendedResolution sceneMode={SceneMode.SCENE2D} />
       </Grid>
     </Grid>

@@ -1,0 +1,17 @@
+.leaflet-container {
+    height: 80vh;
+}
+
+.leaflet-div-icon {
+    background: transparent;
+    border: none;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+    background-color: #246abf;
+}
+
+.leaflet-popup-content p {
+    margin: 0;
+}

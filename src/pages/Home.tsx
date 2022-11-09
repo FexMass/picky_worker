@@ -1,5 +1,7 @@
 import React from 'react';
-import { Box, Typography, Button } from '@mui/material';
+import {
+  Box, Typography, Button, Link
+} from '@mui/material';
 
 const Home: React.FunctionComponent = () => {
   return (
@@ -17,6 +19,19 @@ const Home: React.FunctionComponent = () => {
       >
         Click here to view MUI theme
       </Button>
+      <Box width="100vw" height="10vh" />
+      <Typography variant="h4" color="white">Interactive map investigation:</Typography>
+      <Typography variant="body1" paragraph color="white">
+        Leaflet is the chosen one because it is easy to set up, lightweight, customizable, scalable and always free.
+        <br />
+        Live demos below:
+        <br />
+        <Link href="/cesium" color="inherit">Cesium.js</Link>
+        <br />
+        <Link href="/mapbox" color="inherit">Mapbox GL JS</Link>
+        <br />
+        <Link href="/leaflet" color="inherit">Leaflet.js</Link>
+      </Typography>
     </Box>
   );
 };
